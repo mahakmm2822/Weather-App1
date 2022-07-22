@@ -26,7 +26,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Saksham Madaan'
+        name: 'Mahak Meena'
     })
     console.log(req. socket. remoteAddress)
     console.log(req.ip);
@@ -36,7 +36,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Saksham Madaan'
+        name: 'Mahak Meena'
     })
 })
 
@@ -44,7 +44,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'This is some helpful text.',
         title: 'Help',
-        name : 'Saksham Madaan'
+        name : 'Mahak Meena'
     })
 })
 app.get('/weather', (req, res) => {
@@ -75,14 +75,14 @@ app.get('/weather', (req, res) => {
 app.get('/help/*',(req,res)=>{
     res.render('404-message',{
         title : '404',
-        name:'Saksham Madaan',
+        name:'Mahak Meena',
         error : 'Help article not found'
     });
 })
 
 app.get('*',(req,res)=>{
     res.render('404-message',{
-        name : 'Saksham Madaan',
+        name : 'Mahak Meena',
         title :'404',
         error : 'Page not found.'
     });
